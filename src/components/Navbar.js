@@ -1,9 +1,18 @@
+import { NavLink } from "react-router-dom";
+
 function Navbar() {
-    return (
-      <div className="">
-        Navbar
-      </div>
-    );
-  }
-  
-  export default Navbar;
+  return (
+    <div className="">
+      <ul id="nav">
+        <li>
+          <NavLink to='/'>Home</NavLink>
+        </li>
+        <li>
+          <NavLink to='/create-post'>Create Post</NavLink>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+export default Navbar;

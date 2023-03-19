@@ -79,6 +79,10 @@ code {
   text-decoration: underline;
 }
 
+.create-post {
+  padding-bottom: 20px;
+}
+
 .create-post h1 {
   text-align: center;
 }
