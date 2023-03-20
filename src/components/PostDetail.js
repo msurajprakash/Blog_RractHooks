@@ -15,6 +15,7 @@ function PostDetail() {
         console.log('snapshot', snapshot.data());
         setPost(snapshot.data());
       })
+      // eslint-disable-next-line
   }, []);
   return (
     <div className="post-detail">

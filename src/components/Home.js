@@ -2,6 +2,15 @@ import { useState, useEffect } from "react";
 import { firestore } from '../firebase';
 import { NavLink } from "react-router-dom";
 
+//this is styled component
+import styled from "styled-components";
+
+const BlogHeading = styled.h1`
+  text-align: center;
+  color: #2196f3;
+  margin-bottom: 2px;
+`;
+
 function Home() {
   const [posts, setPosts] = useState([]);
 
@@ -24,7 +33,8 @@ function Home() {
 
   return (
     <div className="home">
-      <h1>Tech Blog</h1>
+      {/* this is styled-component */}
+      <BlogHeading>Tech Blog</BlogHeading>
       <div id="blog-by">Suraj</div>
 
       {posts.map((post, index) => (

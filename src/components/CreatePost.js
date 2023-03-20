@@ -1,6 +1,9 @@
 import { firestore } from '../firebase';
 import { useFormInput } from "../hooks";
 
+//this is module css file which only can affect changes in this component only
+import classes from './Style.module.css';
+
 function CreatePost() {
   const title = useFormInput('');
   const subTitle = useFormInput('');
@@ -40,8 +43,8 @@ function CreatePost() {
           <label>Content</label>
           <textarea {...content}></textarea>
         </div>
-
-        <button className="create-post-btn">Create Post</button>
+        {/* this is css module */}
+        <button className={classes.btn}>Create Post</button>
       </form>
     </div>
   );
