@@ -1,3 +1,4 @@
+import React from "react";
 import { firestore } from '../firebase';
 import { useFormInput } from "../hooks";
 import styled, { css } from 'styled-components';

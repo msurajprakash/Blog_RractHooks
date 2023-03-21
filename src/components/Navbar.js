@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import React from "react";
 import styled from "styled-components";
 
 //to style the given tags from library like NavLink
